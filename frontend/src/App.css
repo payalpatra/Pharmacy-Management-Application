@@ -1,0 +1,24 @@
+
+
+.app{
+  font-family: 'Roboto', sans-serif!important;
+}
+
+.container-fluid .logo img {
+  width: 13vw;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 14vw;
+  object-fit: cover;
+}
+
+.w-100 {
+  width: 100%!important;
+  height: 575px;
+}
+
+.btn-primary {
+  margin-right: 25px;
+}
