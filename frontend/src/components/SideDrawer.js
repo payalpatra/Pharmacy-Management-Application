@@ -1,4 +1,4 @@
-import "./SideDrawer.css";
+import "../styles/SideDrawer.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 

@@ -19,10 +19,9 @@ import AllProductsScreen from "./screens/AllProductsScreen";
 import DermotologyScreen from "./screens/DermotologyScreen";
 import DepressionScreen from "./screens/DepressionScreen";
 import DentalScreen from "./screens/DentalScreen";
-import EyeCareScreen from "./screens/EyeCareScreen";
+
 import FractureScreen from "./screens/FractureScreen";
 import WomensCareScreen from "./screens/WomensCareScreen";
-import HairFallScreen from "./screens/HairFallScreen";
 import AdminScreen from "./screens/AdminScreen";
 // import
 
@@ -43,10 +42,8 @@ function App() {
           <Route exact path="/products/dermatology" component={DermotologyScreen}/>
           <Route exact path="/products/depression" component={DepressionScreen}/>
           <Route exact path="/products/dental" component={DentalScreen} />
-          <Route exact path="/products/eyecare" component={EyeCareScreen} />
           <Route exact path="/products/fracture" component={FractureScreen} />
           <Route exact path="/products/womensCare"component={WomensCareScreen}/>
-          <Route exact path="/products/hairloss" component={HairFallScreen} />
           <Route exact path="/about" component={AboutScreen} />
           <Route exact path="/contact" component={ContactScreen} />
           <Route exact path="/admin" component={AdminScreen} />

@@ -34,9 +34,9 @@ const HomeScreen = () => {
               key={product._id}
               imgsrc={product.imgsrc}
               title={product.title}
-              indication={product.indication}
+              indication={product.indication.length > 150 ? product.indication.slice(0, 150) + "..." : product.indication}
               dosage={product.dosage}
-              sideEffects={product.sideEffects}
+              sideEffects={product.sideEffects.length > 150 ? product.sideEffects.slice(0, 150) + "..." : product.sideEffects}
               price={product.price}
               productId={product._id}
             />

@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import logo from "../images/logo.png";

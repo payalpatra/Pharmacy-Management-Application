@@ -1,4 +1,4 @@
-import "./Product.css";
+import "../styles/Product.css";
 import { Link } from "react-router-dom";
 
 function Card({imgsrc, title, info,link,id}) {

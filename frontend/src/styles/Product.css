@@ -1,10 +1,10 @@
 .product {
-  width: 300px;
+  width: 370px;
   padding: 1rem;
   background: #fff;
   cursor: pointer;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-  margin: 8px auto;
+  margin: 15px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

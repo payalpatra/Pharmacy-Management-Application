@@ -1,31 +1,53 @@
 import React from 'react'
-import StaticProduct from "../components/StaticProduct"
 import allProductsData from "../Data/allProductsData";
-import womenhealth from "../Data/womenHealth";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+
+
+// Components
+import Product from "../components/Product";
+
+//Actions
+import { getProducts as listProducts } from "../redux/actions/productActions";
 
 function WomensCareScreen() {
+  
+  const dispatch = useDispatch();
+
+  const getProducts = useSelector((state) => state.getProducts);
+  const { products, loading, error } = getProducts;
+  useEffect(() => {
+    dispatch(listProducts());
+
+  }, [dispatch]);
     return (
         <div>
       <div className="homescreen">
         <div className="container text-center">
-          <h1 className="mt-3">{allProductsData[6].title}</h1>
+          <h1 className="mt-3">{allProductsData[5].title}</h1>
           <hr className="w-25 mx-auto" />
         </div>
         <div className="homescreen__products">
-          {
-            womenhealth.map((product) => (
-              <StaticProduct
-                key={product._id}
-                imgsrc={product.imgsrc}
-                title={product.title}
-                indication={product.indication}
-                Dosage={product.Dosage}
-                sideEffects={product.sideEffects}
-                price={product.price}
-                productId={product._id}
-              />
-            ))
-          }
+        {loading ? (
+          <h2>Loading...</h2>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : (
+          products.map((product) => product.category === "Women's Care" && (
+            <Product
+              key={product._id}
+              imgsrc={product.imgsrc}
+              title={product.title}
+              indication={product.indication.length > 100 ? product.indication.slice(0, 100) + "..." : product.indication}
+              dosage={product.dosage.length > 50 ? product.dosage.slice(0,50) + "..." : product.dosage}
+              sideEffects={product.sideEffects.length > 150 ? product.sideEffects.slice(0, 150) + "..." : product.sideEffects}
+              price={product.price}
+              productId={product._id}
+            />
+          )
+          )
+        )}
         </div>
       </div>
     </div>

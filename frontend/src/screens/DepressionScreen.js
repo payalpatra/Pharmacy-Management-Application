@@ -1,9 +1,26 @@
 import React from 'react'
-import StaticProduct from "../components/StaticProduct"
 import allProductsData from "../Data/allProductsData";
-import depression from "../Data/depression";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+// Components
+import Product from "../components/Product";
+
+//Actions
+import { getProducts as listProducts } from "../redux/actions/productActions";
+
 
 function DepressionScreen() {
+
+  const dispatch = useDispatch();
+
+  const getProducts = useSelector((state) => state.getProducts);
+  const { products, loading, error } = getProducts;
+  useEffect(() => {
+    dispatch(listProducts());
+
+  }, [dispatch]);
+
     return (
         <div>
       <div className="homescreen">
@@ -12,20 +29,25 @@ function DepressionScreen() {
           <hr className="w-25 mx-auto" />
         </div>
         <div className="homescreen__products">
-          {
-            depression.map((product) => (
-              <StaticProduct
-                key={product._id}
-                imgsrc={product.imgsrc}
-                title={product.title}
-                indication={product.indication}
-                Dosage={product.Dosage}
-                sideEffects={product.sideEffects}
-                price={product.price}
-                productId={product._id}
-              />
-            ))
-          }
+          {loading ? (
+          <h2>Loading...</h2>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : (
+          products.map((product) => product.category === "Depression" && (
+            <Product
+              key={product._id}
+              imgsrc={product.imgsrc}
+              title={product.title}
+              indication={product.indication}
+              dosage={product.dosage}
+              sideEffects={product.sideEffects}
+              price={product.price}
+              productId={product._id}
+            />
+          )
+          )
+        )}
         </div>
       </div>
     </div>
