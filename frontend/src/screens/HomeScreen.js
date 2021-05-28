@@ -1,4 +1,4 @@
-import "./HomeScreen.css";
+import "../styles/HomeScreen.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
