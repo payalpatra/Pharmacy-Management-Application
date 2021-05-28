@@ -7,6 +7,7 @@ const products = [
         dosage: "Adult: Topical- As 0.05 or 0.1% cream/gel: Apply once in the evening.",
         sideEffects: "Skin: Itching, burning/stinging, redness, skin peeling, irritation, worsening of psoriasis, rash, dry skin, bleeding, localized swelling, high cholesterol levels, desquamation, contact dermatitis, discoloration of skin and photosensitivity.",
         price: 420.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -16,6 +17,7 @@ const products = [
         dosage: "Adult- PO- The recommended dose range is 0.5 to 1.0 mg/kg/day given in two divided doses with food for 15 to 20 weeks.",
         sideEffects: "Allergic reactions, fast heart rate and stroke.",
         price: 299.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -25,6 +27,7 @@ const products = [
         dosage: "Children over 12 years: 50mg every 12 hours, Adults The usual  dosage is 100 mg every 12 hours. The  dosage and duration varies according to the type of infection.For local use in the gums, the dose is 1mg given beneath the gums.",
         sideEffects: "Loss of appetite, nausea, vomiting, diarrhea, indigestion, mouth ulcer, discoloration of the tongue and difficulty in swallowing.",
         price: 300.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -34,6 +37,7 @@ const products = [
         dosage: "Adult: Topical- Apply 1-4 times/day.",
         sideEffects: "Rash or irritation.",
         price: 240.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -43,6 +47,7 @@ const products = [
         dosage: "Apply as directed by Physician",
         sideEffects: "Rarely, redness, pain and irritation at the site of application.",
         price: 220.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -52,6 +57,7 @@ const products = [
         dosage: "Adult- PO- The recommended  dosage for duodenal ulcer is 1 g four times per day on an empty stomach.",
         sideEffects: "Diarrhea, nausea, vomiting, gastric discomfort, indigestion, flatulence and dry mouth, Itching and rash, Dizziness, sleeplessness, sleepiness and unsteadiness,Back pain and headache.",
         price: 190.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -61,6 +67,7 @@ const products = [
         dosage: "Topical- A thin film of gel should be applied once a day to affected areas after washing the skin.",
         sideEffects: "A brief sensation of warmth or stinging may occur immediately after applying the medication, redness, dryness, itching of the skin and scaling, mild burning, or worsening of acne may occur during the first 2-4 weeks of using the medication.",
         price: 320.00,
+        countInStock : 500,
         category: "Dermatology",
     },
 
@@ -71,6 +78,7 @@ const products = [
         dosage: "Topical- Apply a thin layer to the affected area as directed by your physician.",
         sideEffects: "Itching, irritation, redness, flushes, papules, feeling of warmth, increased sweating, contact dermatitis and dryness of the skin.",
         price: 285.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -80,6 +88,7 @@ const products = [
         dosage: "PO- Adults: The usual dose is 250 mg every 6 hours taken one hour before meals.Child-The usual  dosage is 30 to 50 mg/kg/day in divided doses.",
         sideEffects: "Most Frequent : Nausea, vomiting, abdominal pain, diarrhea and loss of appetite.",
         price: 325.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -89,6 +98,7 @@ const products = [
         dosage: "PO- The recommended dose range is 250 to 1.5gm in divided doses.Topical-Apply a thin layer over the affected skin 4 times per day.",
         sideEffects: "Loss of appetite, nausea, vomiting, diarrhea, tongue inflammation, difficulty in swallowing and inflammatory lesions.",
         price: 225.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -98,6 +108,7 @@ const products = [
         dosage: "as directed by your physician.",
         sideEffects: "Itching, irritation, redness, flushes, papules, feeling of warmth, increased sweating, contact dermatitis and dryness of the skin.",
         price: 200.00,
+        countInStock : 500,
         category: "Dermatology",
     },
     {
@@ -107,6 +118,7 @@ const products = [
         dosage: "PO- The recommended dose is 45 mg/m2/day administered as two evenly divided doses.Topical- 0.05% apply a thin layer of cream over the affected area.",
         sideEffects: "Headache, fever, skin dryness, bone pain, nausea/vomiting, rash, itching, increased sweating, visual disturbances, hair loss, skin changes and bone inflammation.",
         price: 295.00,
+        countInStock : 500,
         category: "Dermatology",
     },
 
@@ -125,7 +137,8 @@ const products = [
         sideEffects:
             "Upper respiratory tract infection, heart attack, throat inflammation, diarrhea, high blood pressure, headache, back pain and urinary tract infection.",
         price: 405,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -137,7 +150,8 @@ const products = [
         sideEffects:
             "Lactic Acidosis and pancreatitis.Most Common: Upper respiratory tract infection, nasopharyngitis, diarrhea, hypertension, headache, back pain and urinary tract infection.",
         price: 500,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -150,7 +164,8 @@ const products = [
         sideEffects:
             "Inflammation of throat and nasal passages, back pain and upper respiratory tract infection.",
         price: 450,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -162,7 +177,8 @@ const products = [
         sideEffects:
             "Female genital mycotic infections, urinary tract infection and increased urination.",
         price: 298,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -175,7 +191,8 @@ const products = [
         sideEffects:
             "Body as a Whole : Low blood sugar, Disulfiram-like,Central Nervous System : Dizziness and headache, Gastrointestinal : Diarrhea, nausea, vomiting, loss of appetite and hunger, Liver : Jaundice, Skin : Itching and hives, Blood : Anemia and decrease in blood counts.",
         price: 345,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -188,7 +205,8 @@ const products = [
         sideEffects:
             "Headache, fatigue, increased level of liver enzyme, runny nose, vomiting, constipation, indigestion, difficulty in swallowinglow blood sugar, nausea and high blood pressure..",
         price: 400,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -201,7 +219,8 @@ const products = [
         sideEffects:
             "Common: Frequent urination, low blood sugar level, genital fungal infections, Gastrointestinal: Nausea, pain in the stomach, vomiting, Cardiovascular: Low blood volume, low blood pressure, faster heartbeat, increased LDL-cholesterol level in blood, Nervous system: Confusion, dizziness, headache, irritability, weakness, Respiratory: Difficulty in breathing, nasopharyngitis, Kidney: Urinary tract infections (pyelonephritis, urosepsis or bladder infections), pain or burning sensation while passing urine, blood in urine, reduced kidney function, Others: Foot ulcers or sores, fever, pain or tenderness in the lower limbs, pain in the back, reduced weight, increased thirst",
         price: 500,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -214,7 +233,8 @@ const products = [
         sideEffects:
             "Most Common: Nausea.Central Nervous System: Dizziness or lightheadedness, nervousness, mood changes, weakness, shakiness, confusion, epilepsy and loss of consciousness.Gastrointestinal: Extreme thirst, extreme hunger, stomach upset, vomiting, diarrhea and difficulty in swallowing. Skin: Rash, hives and itching. Allergic reactions: Swelling of the face, throat, tongue, lips, eyes, hands, feet, ankles, or lower legs and difficulty in breathing.",
         price: 395,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -227,7 +247,8 @@ const products = [
         sideEffects:
             "Digestive tract: Nausea, vomiting, flatulence, abdominal fullness, diarrhea, constipation, heartburn, liver dysfunction, Skin: Rash, skin swelling, photosensitivity reactions (skin reactions following exposure to sunlight) including porphyria cutanea tarda (which is associated with an enzyme deficiency, Blood: Low blood counts, low blood glucose levels, low blood sodium levels, Others: Tiredness, weakness, fever, other allergic reactions, weight gain, joint or muscle pain.",
         price: 456,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -240,7 +261,8 @@ const products = [
         sideEffects:
             "Low blood sugar, upper respiratory tract infection, diarrhea, headache, nausea/vomiting, abdominal pain and dizziness.",
         price: 355,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -253,7 +275,8 @@ const products = [
         sideEffects:
             "GI disturbances, skin reaction, decrease in blood cell counts, jaundice, vomiting, diarrhea and stomach inflammation.",
         price: 505,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc:
@@ -266,7 +289,8 @@ const products = [
         sideEffects:
             "Most Common : Low blood sugar, temporary visual impairment and GI disturbances. Miscellaneous : Dizziness, weakness, headache, nausea/vomiting, lightheadedness, confusion and irritability.",
         price: 500,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
     {
         imgsrc: "https://5.imimg.com/data5/CK/TL/MY-5656419/1-500x500.jpg",
@@ -278,7 +302,8 @@ const products = [
         sideEffects:
             "Low blood sugar. Heart: Increased risk of death due to heart problems. Central Nervous System: Dizziness and vertigo. Skin: Allergic skin reactions, inflammation of skin, itching, redness, hives, eruptions and photosensitivity.",
         price: 600,
-        category: "Diabetes",
+  
+  countInStock : 500,      category: "Diabetes",
     },
 
     // ------ Diabetes End------- \\
@@ -291,7 +316,8 @@ const products = [
         dosage: "• Oral: 400-1600 mg per day",
         sideEffects: "Nervous system disorders: Headache, insomnia, dizziness, nervousness",
         price: 345,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -301,7 +327,8 @@ const products = [
         dosage: "The starting dose for treating anxiety is 0.25-0.5 mg, 3 times daily using immediate release tablets.",
         sideEffects: "Gastrointestinal : Dry mouth, constipation, diarrhea, nausea/vomiting and increased salivation.",
         price: 765,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -311,7 +338,8 @@ const products = [
         dosage: "Adult: PO- Depression- Initial:50-75 mg/day; up to 150 mg/day if needed.",
         sideEffects: "Allergic : Skin rash, hives, photosensitivity, swelling of the face and tongue.",
         price: 987,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -321,7 +349,8 @@ const products = [
         dosage: "Adult- Initial- The recommended dose is 50 mg two or three times daily.",
         sideEffects: "Miscellaneous : Dizziness, headache, fatigue, weakness, excessive appetite and increased perspiration.",
         price: 243,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -331,7 +360,8 @@ const products = [
         dosage: "Adult: Initial dose: 10 to 15 mg once daily.",
         sideEffects: "Central Nervous System: Dizziness, drowsiness, headache.",
         price: 500,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -341,7 +371,8 @@ const products = [
         dosage: "OSA/Nacrolepsy- Oral- The recommended dose is 150 mg or 250 mg given as a single dose in the morning.",
         sideEffects: "General : Fatigue, thirst, influenza-like illness, pain and fever.",
         price: 798,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
 
     {
@@ -351,7 +382,8 @@ const products = [
         dosage: "Dosing of children and adolescents up to 70 kg body weight",
         sideEffects: "Gastrointestinal : Liver disease, abdominal pain, vomiting and nausea.",
         price: 200,
-        category: "Depression"
+  
+  countInStock : 500,      category: "Depression"
     },
     // ------- Depression End ------- \\
     // ------- Dental  ------- \\
@@ -362,7 +394,8 @@ const products = [
         dosage: "As 0.2% solution: Rinse with 10 ml for 1 min 2-3 times/day.",
         sideEffects: "Skin sensitivity, irritation of eye, mucosal irritation and staining of the teeth and tongue.",
         price: 300,
-        category: "Dental"
+  
+  countInStock : 500,      category: "Dental"
     },
 
     {
@@ -372,7 +405,8 @@ const products = [
         dosage: "Feracrylum is available as a 1% sterile solution (1% w/v feracrylum), as 50 and 15 gm gel tubes (1% w/w feracrylum) and tulle ( 3% w/v feracrylum).",
         sideEffects: "Gastrointestinal: Nausea, stomach pain.",
         price: 620,
-        category: "Dental"
+  
+  countInStock : 500,      category: "Dental"
     },
 
     {
@@ -382,7 +416,8 @@ const products = [
         dosage: "The recommended dose of the drug is 20mg/0.2ml injection.",
         sideEffects: " Skin: Rashes, pale skin, clots at the puncture site.",
         price: 854,
-        category: "Dental"
+  
+  countInStock : 500,      category: "Dental"
     },
 
     {
@@ -392,7 +427,8 @@ const products = [
         dosage: "Dose is based on patient’s condition.",
         sideEffects: "Slight nausea and unpleasant taste.",
         price: 790,
-        category: "Dental"
+  
+  countInStock : 500,      category: "Dental"
     },
     // ------- Dental End ------- \\
 
@@ -404,7 +440,8 @@ const products = [
         dosage: " The recommended adult dose is 80 mcg to be given subcutaneously (just under the skin) once a day",
         sideEffects: "•  Gastrointestinal: Nausea, pain in upper abdominal area, constipation, upset stomach.",
         price: 350,
-        category: "Fracture"
+  
+  countInStock : 500,      category: "Fracture"
     },
 
     {
@@ -414,7 +451,8 @@ const products = [
         dosage: "The usual dosage is one tablet every 6 hours as needed for pain.",
         sideEffects: " Most common : Lightheadedness, dizziness, drowsiness or sedation, nausea and vomiting.",
         price: 705,
-        category: "Fracture"
+  
+  countInStock : 500,      category: "Fracture"
     },
 
 
@@ -425,7 +463,8 @@ const products = [
         dosage: "The recommended oral adult dose for metamizole is 500 mg 3-4 times up to a maximum dose of 4000 mg/day.",
         sideEffects: "Skin: Severe skin reactions like toxic epidermal necrolysis",
         price: 432,
-        category: "Fracture"
+  
+  countInStock : 500,      category: "Fracture"
     },
 
     // ----- Fracture End ----- \\
@@ -437,7 +476,8 @@ const products = [
         dosage: "Adult- The recommended dose range is 25 to 400 mg/day.",
         sideEffects: "Gastrointestinal : Abdominal pain, nausea, vomiting, abdominal distension and constipation. General : Fatigue. Central Nervous System : Headache.urinary tract infections.",
         price: 285,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
 
     {
@@ -447,7 +487,8 @@ const products = [
         dosage: "The dose varies according to the condition.The usual recommended oral dose for dehydroepiandrosterone is 50 to 75 mg/day. Higher doses of 50 mg three times a day have been used for adrenal insufficiency.",
         sideEffects: "Changes in blood pressure, reduced HDL cholesterol levels",
         price: 420,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
     {
         imgsrc: "https://i.postimg.cc/7h3gdwC1/fen.jpg",
@@ -456,7 +497,8 @@ const products = [
         dosage: "The usual recommended dose is between 0.5 to 1 mg.However, the dose depends on the underlying condition.EPA is present in fish oil capsules along with docosapentanoic acid.",
         sideEffects: "Gastrointestinal: Nausea, diarrhea, heartburn, belching, Skin: Skin rash, itching, Others: Nosebleed, or joint, back pain and muscle pain",
         price: 400,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
     {
         imgsrc: "https://i.postimg.cc/8zB0Mgt6/es.jpg",
@@ -465,7 +507,8 @@ const products = [
         dosage: "Adult- IV/IM/PO: The recommended dose range is 0.3 to 25mg.",
         sideEffects: "Gastrointestinal : Stomach upset, vomiting, heartburn, constipation, diarrhea and gas. Central Nervous System : Nervousness, depression, dizziness, tight muscles, weakness, tingling and movement disorders. Metabolic : Weight gain or loss and loss of appetite. Skin : Hair loss, unwanted hair growth and darkening of the skin, Musculoskeletal : Leg cramps and joint pain. Allergic Reactions : Rash, blisters, hives, itching, swelling of the eyes, face, tongue, throat, hands, arms, feet, ankles or lower legs, hoarseness, difficulty in breathing or swallowing. Miscellaneous : Sore throat, fever, chills, cough and other signs of infection.",
         price: 320,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
     {
         imgsrc: "https://i.postimg.cc/9QRGHdqF/est.jpg",
@@ -474,7 +517,8 @@ const products = [
         dosage: "PO- The recommended dose is 0.75-9 mg orally daily. Administration usually is cycled; 21 days on and 7-10 days off.",
         sideEffects: "Heart: Blood clot in lungs and blood vessels, heart attack, stroke and increase in blood pressure. Gastrointestinal: Nausea, vomiting, abdominal cramps, bloating, gallbladder disease and inflammation of pancreas. Liver: Jaundice and enlargement of liver tumor.Skin: Dark skin, acne, redness, bleeding eruption, loss of scalp hair, excessive hair growth over the body, itching and rash.",
         price: 545,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
     {
         imgsrc: "https://i.postimg.cc/sDBBMVfT/fem.png",
@@ -483,7 +527,8 @@ const products = [
         dosage: "PO- A single tablet to be taken orally once daily.",
         sideEffects: "Body As A Whole : Headache, back pain, viral infection. Gastrointestinal : Nausea, vomiting, abdominal pain, indigestion, diarrhea. Musculoskeletal : Joint and muscle pain. Central Nervous System : Nervousness, depression. Respiratory : Nose inflammation, inflammation of the sinuses.urinary tract infection",
         price: 305,
-        category: "Women's Care"
+  
+  countInStock : 500,      category: "Women's Care"
     },
 
 
