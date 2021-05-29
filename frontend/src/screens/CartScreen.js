@@ -15,25 +15,37 @@ const CartScreen = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   const qtyChangeHandler = (id, qty) => {
     dispatch(addToCart(id, qty));
   };
 
+  // Removing selected item from the cart
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
   };
 
+  // To get the total items present in the cart
   const getCartCount = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
-
+  // Getting the total Price 
   const getCartSubTotal = () => {
     return cartItems
       .reduce((price, item) => price + item.price * item.qty, 0)
       .toFixed(2);
   };
+
+  // Empty The cart after Succcesfull Payment
+  const emptyCart = () => {
+    cartItems.forEach(item => dispatch(removeFromCart(item.product)))
+  }
+
+
+  const proceedToCheckoutHandler = () => {
+    emptyCart()
+  }
 
   return (
     <>
@@ -63,7 +75,7 @@ const CartScreen = () => {
             <p>₹{getCartSubTotal()}</p>
           </div>
           <div>
-            <button>Proceed To Checkout</button>
+            <button type="button" onClick={proceedToCheckoutHandler} >Proceed To Checkout</button>
           </div>
         </div>
       </div>
