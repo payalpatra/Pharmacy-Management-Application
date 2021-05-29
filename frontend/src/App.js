@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 // Components
 import Navbar from "./components/Navbar";
 import SideDrawer from "./components/SideDrawer";
@@ -24,6 +25,7 @@ import FractureScreen from "./screens/FractureScreen";
 import WomensCareScreen from "./screens/WomensCareScreen";
 import AdminScreen from "./screens/AdminScreen";
 // import
+
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
