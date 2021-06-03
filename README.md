@@ -1,12 +1,11 @@
-# E-Pharmacy-Management-System
-Ongoing Project
+# Pharmacy-Management-Application
 
 ### Installation Guidlines
 
 #### STEP 1
 
  ```sh
-   git clone https://github.com/Invention-Hub/E-Pharmacy-Application.git
+   git clone https://github.com/payalpatra/Pharmacy-Management-Application.git
    ```
 
 #### STEP 2
@@ -21,7 +20,8 @@ Ongoing Project
 
   ```sh
    PORT=5000
-   MONGO_URI =MONGO_URI =mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.ifcel.mongodb.net/<DBNAME>?retryWrites=true&w=majority
+  NODE_ENV= production
+  SECRET_KEY = 
    ```
    
 #### STEP 4
@@ -34,5 +34,5 @@ Ongoing Project
 * ##### Starting the development server
 ###### (Make sure to run this in the root directory)
 ```sh
- npm run dev 
+ npm start
    ```
