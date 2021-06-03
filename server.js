@@ -3,9 +3,9 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const stripe = require("stripe")(process.env.SECRET_KEY)
-const Contact = require("./models/Contact")
-const productRoutes = require("./routes/productRoutes");
-const connectDB = require("./config/db");
+const Contact = require("./backend/models/Contact")
+const productRoutes = require("./backend/routes/productRoutes");
+const connectDB = require("./backend/config/db");
 
 // Initializing APP
 const app = express();
@@ -60,23 +60,23 @@ app.post("/payment", (req, res) => {
 
 app.use("/api/products", productRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-// if(process.env.NODE_ENV === 'production'){
-//   app.use(express.static(path.join(__dirname, '/frontend/build')));
-//   app.get("*", (req, res)=>{
-//    res.sendFile(path.join(__dirname, 'frontend',"build","index.html"));
-//   })
-// }else{
-//   app.get("/", (req,res)=>{
-//     res.send("Hey There , Greetings From The Server. Have a Good Day :)")
-//   })
-// }
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname, '/frontend/build')));
+  app.get("*", (req, res)=>{
+   res.sendFile(path.join(__dirname, 'frontend',"build","index.html"));
+  })
+}else{
+  app.get("/", (req,res)=>{
+    res.send("Hey There , Greetings From The Server. Have a Good Day :)")
+  })
+}
 
 
-// const port = process.env.PORT || 5000;
-// app.listen(port, () => console.log("serve at http://localhost:5000"));\
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log("serve at http://localhost:5000"));
 
 // Package .json 
 // "start": "node server.js",
